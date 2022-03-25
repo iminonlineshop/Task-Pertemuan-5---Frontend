@@ -1,0 +1,119 @@
+/* Small Screen */
+.container {
+  margin: 1rem;
+}
+
+.addmovieform {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding-bottom: 100px;
+  color: black;
+}
+
+.addmovieform__left {
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  text-align: justify;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+.addmovieform__right {
+  margin-bottom: 20px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 150px;
+}
+
+.addmovieform__judul {
+  color: blue;
+  margin-bottom: 5px;
+}
+
+.addmovieform__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  padding-left: 70px;
+  float: left;
+}
+
+.addmovieform__form {
+  float: right;
+}
+
+.addmovieform__button {
+  padding: 0.5rem 4rem;
+  margin-bottom: 6px;
+  margin-left: auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #4361ee;
+  color: #fff;
+}
+
+.hero__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  /*
+   * Nothing TODO Here.
+   * We dont change style Hero. 
+   */
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  .hero {
+    margin: 0 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .hero__left {
+    flex-basis: 40%;
+  }
+
+  .hero__right {
+    flex-basis: 60%;
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .addmovieform__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addmovieform {
+    flex-basis: 50%;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  .addmovieform {
+    flex-basis: 25%;
+    padding: 1rem;
+  }
+}
